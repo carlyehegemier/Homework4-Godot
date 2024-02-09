@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4cdqavfchb1l"]
+
+[ext_resource type="Script" path="res://Rotate.gd" id="1_a5re8"]
+
+[node name="Sun" type="Node2D"]
+position = Vector2(549, 322)
+script = ExtResource("1_a5re8")
+rotation_speed = 0.1
+
+[node name="Mercury" type="Node2D" parent="."]
+position = Vector2(41, 58)
+
+[node name="Venus" type="Node2D" parent="."]
+position = Vector2(73, 101)
+
+[node name="V_moon" type="Node2D" parent="Venus"]
+position = Vector2(21, 20)
+
+[node name="Earth" type="Node2D" parent="."]
+position = Vector2(130, 170)
+
+[node name="E_moon" type="Node2D" parent="Earth"]
+position = Vector2(11, 25)
+
+[node name="Mars" type="Node2D" parent="."]
+position = Vector2(184, 243)
+
+[node name="Jupiter" type="Node2D" parent="."]
+position = Vector2(225, 300)
